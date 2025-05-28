@@ -20,11 +20,12 @@
 !*.qz
 !*.txt
 !*.json
-## Model graphics
+## Model graphics and Reference Files
 !*.kRef
 !*.xdr
+#!*.rxdr
 ## Auxilary files
 !*.mcl
-## Exclude
-**/**/Snapshots
-**/**/Logging
+## Exclude Log directories and Snapshot directories
+**/Logging
+**/Snapshots
