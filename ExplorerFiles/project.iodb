@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<iodb>
+
+  <input type="Flowline">
+    <output type="PipeVolume">
+      <connection group="group3293" icname="InletStream" isymbol="Flowline" ocname="OutletStream" osuffix="[]" osymbol="PipeVolume" rank="0" reference="Graphic1" style="Process Main"/>
+    </output>
+    <output type="WellIndex">
+      <connection group="group3327" icname="InletStream" isymbol="Flowline" ocname="OutletStream" osymbol="WellIndex_ProductionWell" rank="0" reference="Graphic1" style="Process Main"/>
+    </output>
+  </input>
+
+  <input type="PipeVolume">
+    <output type="WellIndex">
+      <connection group="group3301" iarray="true" icname="InletStream" isymbol="PipeVolume" ocname="OutletStream" osymbol="WellIndex_ProductionWell" rank="0" reference="Graphic1" style="Process Main"/>
+    </output>
+  </input>
+
+  <input type="WellIndex">
+    <output type="PressureBoundary">
+      <connection group="group3256" icname="InletStream" isymbol="WellIndex_ProductionWell" ocname="OutletStream" osuffix="[]" osymbol="RightPB" rank="1" reference="Graphic1" style="Process Main"/>
+    </output>
+  </input>
+
+</iodb>

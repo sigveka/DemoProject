@@ -1,0 +1,11 @@
+SetBaseTime([19:46:34.00])
+
+// SetVariable;/Tutorial/ProcessModel - 25HV0001:TargetPosition - 50.0
+at ([19:46:46.00],"/Tutorial") send("SetVariable;/Tutorial/ProcessModel","25HV0001:TargetPosition",50.0)
+
+// ramp: {23TIC0003:InternalSetpoint} - 40 - 300 - 1 - 
+at ([19:47:20.00],"/Tutorial") ramp({23TIC0003:InternalSetpoint}, 40, 300, 1)
+
+// SetVariable;/Tutorial/ProcessModel - 23PA0001:HeadGasDegradation - 0.2
+at ([19:48:08.00],"/Tutorial") send("SetVariable;/Tutorial/ProcessModel","23PA0001:HeadGasDegradation",0.2)
+

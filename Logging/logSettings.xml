@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<LogSettings xmlns="">
+
+  <Levels>
+    <Level Name="debug-msg" Value="true"/>
+    <Level Name="error-msg" Value="true"/>
+    <Level Name="no-timeinfo" Value="true"/>
+    <Level Name="notify" Value="true"/>
+    <Level Name="popup-err" Value="true"/>
+    <Level Name="popup-info" Value="true"/>
+    <Level Name="popup-warn" Value="true"/>
+    <Level Name="progress" Value="true"/>
+    <Level Name="trace-msg" Value="true"/>
+    <Level Name="unknown" Value="true"/>
+    <Level Name="warning" Value="true"/>
+  </Levels>
+
+  <Components>
+    <Component Name="sm_state" Value="true"/>
+    <Component Name="unknown" Value="true"/>
+  </Components>
+
+  <IncludedBundles/>
+
+  <ExcludedBundles/>
+
+</LogSettings>
