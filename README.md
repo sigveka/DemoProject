@@ -1,3 +1,3 @@
 
 
-![](Resources\Common\Illustration_Porcess.png)
+![](Resources/Common/Illustration_Porcess.png)
