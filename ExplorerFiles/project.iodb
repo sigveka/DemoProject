@@ -16,6 +16,12 @@
     </output>
   </input>
 
+  <input type="Separator">
+    <output type="PipeFlow">
+      <connection group="group4570" iarray="true" icname="FeedInletStream" isymbol="Separator_Horizontal" ocname="OutletStream" osymbol="PipeFlow" rank="1" reference="KSpiceTutorial Model" style="Process Main"/>
+    </output>
+  </input>
+
   <input type="WellIndex">
     <output type="PressureBoundary">
       <connection group="group3256" icname="InletStream" isymbol="WellIndex_ProductionWell" ocname="OutletStream" osuffix="[]" osymbol="RightPB" rank="1" reference="Graphic1" style="Process Main"/>
