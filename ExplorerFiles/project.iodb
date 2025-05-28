@@ -18,7 +18,8 @@
 
   <input type="Separator">
     <output type="PipeFlow">
-      <connection group="group4570" iarray="true" icname="FeedInletStream" isymbol="Separator_Horizontal" ocname="OutletStream" osymbol="PipeFlow" rank="1" reference="KSpiceTutorial Model" style="Process Main"/>
+      <connection group="group4570" iarray="true" icname="FeedInletStream" isymbol="Separator_Horizontal" ocname="OutletStream" osymbol="PipeFlow" rank="3" reference="KSpiceTutorial Model" style="Gas"/>
+      <connection group="group3542" iarray="true" icname="OverflowInletStream" isymbol="Separator_Horizontal" ocname="OutletStream" osymbol="PipeFlow" rank="0" reference="KSpiceTutorial Model" style="Process Main"/>
     </output>
   </input>
 

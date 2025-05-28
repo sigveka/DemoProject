@@ -27,6 +27,7 @@
 #!*.rxdr
 ## Auxilary files
 !*.mcl
+!*.md
 ## Exclude Log directories and Snapshot directories
 **/Logging
 **/Snapshots
