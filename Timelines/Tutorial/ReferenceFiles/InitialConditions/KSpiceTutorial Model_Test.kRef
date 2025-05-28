@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KSpiceFile>
+  <Version>25.1.1.6</Version>
+  <Category>InitName</Category>
+  <Comment></Comment>
+  <Description></Description>
+  <Folder></Folder>
+  <SaveTime>2025-05-28T08:45:25.893Z</SaveTime>
+  <ModelTime>0000000:00:27.000</ModelTime>
+  <TimeFormat>Engineering</TimeFormat>
+  <WriteProtected>false</WriteProtected>
+</KSpiceFile>

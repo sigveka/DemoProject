@@ -1,0 +1,30 @@
+## Exclude all files by default
+**/*
+## Include all directories and Explicitly include relevant file-types
+!**/
+!.gitignore
+## Project Root CommonData / Resources /
+!*.tab
+!*.sym
+!*.kspice
+!*.db
+!*.iodb
+!*.xml
+## Applications and model files
+!*.mdl
+!*.par
+!*.var
+!*.trn
+#!*.hst
+!*.qs
+!*.qz
+!*.txt
+!*.json
+## Model graphics
+!*.kRef
+!*.xdr
+## Auxilary files
+!*.mcl
+## Exclude
+**/**/Snapshots
+**/**/Logging
