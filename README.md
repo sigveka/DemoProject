@@ -1,3 +1,11 @@
 
+# Using Git to version control a simple model
 
-![](Resources\Common\Illustration_Porcess.png)
+# Demo Project
+
+![][img]
+
+
+
+[img]: Resources/Common/Illustration_Process.png
+
