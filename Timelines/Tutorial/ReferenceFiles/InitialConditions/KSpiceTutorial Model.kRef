@@ -8,5 +8,5 @@
   <SaveTime>2025-02-14T09:27:05.649Z</SaveTime>
   <ModelTime>0000000:00:04.000</ModelTime>
   <TimeFormat>Engineering</TimeFormat>
-  <WriteProtected>true</WriteProtected>
+  <WriteProtected>false</WriteProtected>
 </KSpiceFile>
