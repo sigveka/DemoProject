@@ -4,7 +4,11 @@
     <Description></Description>
     <Comment></Comment>
     <ModelTime></ModelTime>
+<<<<<<< HEAD
     <SaveTime>2025-06-03T11:50:17.459Z</SaveTime>
+=======
+    <SaveTime>2025-06-03T11:46:05.223Z</SaveTime>
+>>>>>>> change
     <ModelFile>C:\K-Spice-Projects\DemoProject\Timelines\Tutorial\Applications\ProcessModel\KSpiceTutorial Model.mdl</ModelFile>
     <ParameterFile></ParameterFile>
     <ValueFile></ValueFile>
@@ -3205,7 +3209,6 @@
       </DataItem>
       <DataItem Name="ValvePosition" >
         <Array>
-          <Value index="0" >0.5</Value>
         </Array>
       </DataItem>
       <DataItem Name="FractionalPositionOption" >
@@ -4734,12 +4737,18 @@
       </DataItem>
     </DataItems>
   </Block>
+<<<<<<< HEAD
   <Block Name="23MA0003" >
     <DataItems>
       <DataItem Name="OverallParameterStatus" >
         <Value>0</Value>
       </DataItem>
       <DataItem Name="Action" >
+=======
+  <Block Name="23ESV0002" >
+    <DataItems>
+      <DataItem Name="ControlOption" >
+>>>>>>> change
         <Value>0</Value>
       </DataItem>
       <DataItem Name="RunningLightOpenPosition" >
@@ -4839,7 +4848,11 @@
         <Value>0</Value>
       </DataItem>
       <DataItem Name="SafePositionOnTrip" >
+<<<<<<< HEAD
         <Value>2</Value>
+=======
+        <Value>0</Value>
+>>>>>>> change
       </DataItem>
       <DataItem Name="OpeningTime" >
         <Value>12.000000000000002</Value>
