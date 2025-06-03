@@ -4,7 +4,7 @@
     <Description></Description>
     <Comment></Comment>
     <ModelTime></ModelTime>
-    <SaveTime>2025-06-03T10:54:49.773Z</SaveTime>
+    <SaveTime>2025-06-03T11:46:05.223Z</SaveTime>
     <ModelFile>C:\K-Spice-Projects\DemoProject\Timelines\Tutorial\Applications\ProcessModel\KSpiceTutorial Model.mdl</ModelFile>
     <ParameterFile></ParameterFile>
     <ValueFile></ValueFile>
@@ -3206,7 +3206,6 @@
       </DataItem>
       <DataItem Name="ValvePosition" >
         <Array>
-          <Value index="0" >0.5</Value>
         </Array>
       </DataItem>
       <DataItem Name="FractionalPositionOption" >
@@ -4687,160 +4686,6 @@
       </DataItem>
       <DataItem Name="SafePositionOnTrip" >
         <Value>0</Value>
-      </DataItem>
-      <DataItem Name="OpeningTime" >
-        <Value>12.000000000000002</Value>
-      </DataItem>
-      <DataItem Name="ClosingTime" >
-        <Value>12.000000000000002</Value>
-      </DataItem>
-      <DataItem Name="TripTime" >
-        <Value>12.000000000000002</Value>
-      </DataItem>
-      <DataItem Name="ActuatorMotion" >
-        <Value>2</Value>
-      </DataItem>
-      <DataItem Name="SoftLandingApproachDistance" >
-        <Value>0.1</Value>
-      </DataItem>
-      <DataItem Name="MaximumStemPosition" >
-        <Value>1</Value>
-      </DataItem>
-      <DataItem Name="MinimumStemPosition" >
-        <Value>0</Value>
-      </DataItem>
-      <DataItem Name="MinimumOpening" >
-        <Value>0</Value>
-      </DataItem>
-      <DataItem Name="UnTunedPositionData" >
-        <Array>
-          <Value index="0" >0</Value>
-          <Value index="1" >1</Value>
-        </Array>
-      </DataItem>
-      <DataItem Name="CurveTunedPositionData" >
-        <Array>
-          <Value index="0" >0</Value>
-          <Value index="1" >1</Value>
-        </Array>
-      </DataItem>
-      <DataItem Name="InterpolationOption" >
-        <Value>0</Value>
-      </DataItem>
-      <DataItem Name="MinTotalFineTuneFactor" >
-        <Value>0.5</Value>
-      </DataItem>
-      <DataItem Name="MaxTotalFineTuneFactor" >
-        <Value>1.5</Value>
-      </DataItem>
-    </DataItems>
-  </Block>
-  <Block Name="23MA0003" >
-    <DataItems>
-      <DataItem Name="OverallParameterStatus" >
-        <Value>0</Value>
-      </DataItem>
-      <DataItem Name="Action" >
-        <Value>0</Value>
-      </DataItem>
-      <DataItem Name="RunningLightOpenPosition" >
-        <Value>0.99</Value>
-      </DataItem>
-      <DataItem Name="RunningLightClosedPosition" >
-        <Value>0.01</Value>
-      </DataItem>
-      <DataItem Name="ValveCvOption" >
-        <Value>0</Value>
-      </DataItem>
-      <DataItem Name="ValveStrokeTimeOption" >
-        <Value>1</Value>
-      </DataItem>
-      <DataItem Name="ValveSizeOption" >
-        <Value>1</Value>
-      </DataItem>
-      <DataItem Name="ValveFLxTAndFdOption" >
-        <Value>1</Value>
-      </DataItem>
-      <DataItem Name="ValveSize" >
-        <Value>0.3048</Value>
-      </DataItem>
-      <DataItem Name="ValveType" >
-        <Value>5</Value>
-      </DataItem>
-      <DataItem Name="HasHandwheel" >
-        <Value>false</Value>
-      </DataItem>
-      <DataItem Name="ESDOption" >
-        <Value>0</Value>
-      </DataItem>
-      <DataItem Name="PSDOption" >
-        <Value>0</Value>
-      </DataItem>
-      <DataItem Name="PermanentOffset" >
-        <Value>0</Value>
-      </DataItem>
-      <DataItem Name="PermanentHysteresis" >
-        <Value>0</Value>
-      </DataItem>
-      <DataItem Name="GainOnValveSignal" >
-        <Value>0</Value>
-      </DataItem>
-      <DataItem Name="BiasOnValveSignal" >
-        <Value>0</Value>
-      </DataItem>
-      <DataItem Name="ESDTripStateIsLatched" >
-        <Value>false</Value>
-      </DataItem>
-      <DataItem Name="PSDTripStateIsLatched" >
-        <Value>false</Value>
-      </DataItem>
-      <DataItem Name="CvFullyOpen" >
-        <Value>3000</Value>
-      </DataItem>
-      <DataItem Name="FLFullyOpen" >
-        <Value>0.74</Value>
-      </DataItem>
-      <DataItem Name="xTFullyOpen" >
-        <Value>0.42</Value>
-      </DataItem>
-      <DataItem Name="FdFullyOpen" >
-        <Value>0.99</Value>
-      </DataItem>
-      <DataItem Name="CgFullyOpen" >
-        <Value>77768.88838089432</Value>
-      </DataItem>
-      <DataItem Name="C1FullyOpen" >
-        <Value>25.922962793631438</Value>
-      </DataItem>
-      <DataItem Name="ValveCharacteristic" >
-        <Value>1</Value>
-      </DataItem>
-      <DataItem Name="Rangeability" >
-        <Value>0</Value>
-      </DataItem>
-      <DataItem Name="UserDefinedStemPositions" >
-        <Array>
-        </Array>
-      </DataItem>
-      <DataItem Name="UserDefinedCvFractions" >
-        <Array>
-        </Array>
-      </DataItem>
-      <DataItem Name="UserDefinedCvValues" >
-        <Array>
-        </Array>
-      </DataItem>
-      <DataItem Name="InterpolationMethod" >
-        <Value>0</Value>
-      </DataItem>
-      <DataItem Name="FailurePositionOnSignalLoss" >
-        <Value>0</Value>
-      </DataItem>
-      <DataItem Name="FailurePositionOnPowerLoss" >
-        <Value>0</Value>
-      </DataItem>
-      <DataItem Name="SafePositionOnTrip" >
-        <Value>2</Value>
       </DataItem>
       <DataItem Name="OpeningTime" >
         <Value>12.000000000000002</Value>

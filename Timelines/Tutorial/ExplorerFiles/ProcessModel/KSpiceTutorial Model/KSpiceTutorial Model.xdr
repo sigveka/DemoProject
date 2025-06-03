@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<xdr revision="8" entities="918">
+<xdr revision="8" entities="907">
  <drawing id="1" syscol1="GraphicBackground" syscol2="GraphicForeground" syscol3="GraphicHighlight" status="11">
   <parameter name="AUTOCONNECT_GROUPED" value="TRUE"/>
   <attribute name="NameCheckVersion" type="text" value="K-Spice SimExplorer Version 25.1.1.6"/>
@@ -173,9 +173,9 @@
   <attribute name="Inherit" type="null"/>
   <attribute name="SymPlacement" type="null"/>
   <attribute name="SymName" type="text" value="PipeFlow"/>
+  <relation type="child" subid="3" id="1617,1625,1520,1581,1768,1652,1926,1280,1924,1643,1427,1704,1130,1138,1145,1140,1135,1855"/>
   <attribute name="AnimGraphic" type="null"/>
   <relation type="mutual" subid="20" id="1651,1651"/>
-  <relation type="child" subid="3" id="1617,1625,1520,1581,1768,1652,1926,1280,1924,1643,1427,1704,1130,1138,1145,1140,1135,1855"/>
   <animation type="graphic">
    <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="0" priority="0" foreground="StateInactive"/>
    <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="1" priority="0" foreground="StateRunDynamic"/>
@@ -1036,8 +1036,8 @@
  <terminal id="1167" colour="GraphicForeground" xy="350,198" flow="input" nc="1">
   <relation type="parent" subid="3" id="1464"/>
   <relation type="child" subid="12" id="1168"/>
-  <attribute name="IaElement" type="int" value="1"/>
   <attribute name="connection" type="text" value="FeedInletStream"/>
+  <attribute name="IaElement" type="int" value="1"/>
  </terminal>
  <netline id="1168" colour="yellow3" depth="-20" linestyle="Gas" xy="544,376,350,376,350,198" output="23UV0001_pf:OutletStream" input="23VA001:FeedInletStream[1]">
   <relation type="parent" subid="11" id="1115"/>
@@ -1971,11 +1971,6 @@
   <attribute name="Internal" type="null"/>
   <attribute name="ParaType" type="text" value="Stretch"/>
  </netline>
- <text id="1286" colour="GraphicForeground" layer="Hidden" xy="442,122" height="3" hjust="centre" vjust="top" nts="true" ntr="true" ntm="true">
-  <tstring>23MA0003</tstring>
-  <attribute name="AnimGraphic" type="null"/>
-  <relation type="parent" subid="1" id="1290"/>
- </text>
  <text id="1287" colour="GraphicForeground" layer="Hidden" depth="40" xy="442,119" height="3" hjust="centre" nts="true" ntm="true">
   <tstring>23MA0003_pf</tstring>
   <attribute name="AnimGraphic" type="null"/>
@@ -2012,19 +2007,6 @@
    <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="7" priority="0" foreground="StateCheck"/>
   </animation>
  </symbol>
- <tnode id="1290" colour="GraphicForeground" layer="Hidden" xy="442,122" height="3" hjust="centre" vjust="top" nts="true" ntr="true" ntm="true">
-  <attribute name="ItemName" type="null"/>
-  <attribute name="autoposition" type="null"/>
-  <relation type="parent" subid="3" id="1665"/>
-  <relation type="child" subid="1" id="1286"/>
- </tnode>
- <tnode id="1291" colour="white" layer="Hidden" depth="100" xy="446,130" height="1" hjust="centre" font="Verdana" background="0xaaaaaa" nts="true" ntr="true" ntm="true" tagname="23MA0003">
-  <attribute name="LayerLocked" type="null"/>
-  <relation type="parent" subid="3" id="1665"/>
-  <attribute name="AnimGraphic" type="null"/>
-  <animation type="text" tag="%TAG_NAME@B_no">
-  </animation>
- </tnode>
  <tnode id="1292" colour="grey70" depth="20" xy="514.25,278.13" height="2" vjust="middle" font="Verdana" tagname="23PT0002">
   <parameter name="TAG_NAME" value="%TAG_NAME"/>
   <relation type="parent" subid="3" id="1912"/>
@@ -2034,12 +2016,6 @@
    <state type="expression" expression="{%TAG_NAME:AlarmLowUsed} == False" priority="10" text="-"/>
    <state type="expression" expression="(({%TAG_NAME:AlarmLowLowUsed} == False) &amp;&amp; ({%TAG_NAME:AlarmLowUsed} == False) &amp;&amp; ({%TAG_NAME:AlarmHighUsed} == False) &amp;&amp; ({%TAG_NAME:AlarmHighHighUsed} == False))" priority="11" foreground="invisible"/>
    <state type="expression" expression="((({%TAG_NAME:AlarmOption} == 0) &amp;&amp; ({%TAG_NAME:AlarmLow}) == True) || (({%TAG_NAME:AlarmOption} == 1) &amp;&amp; ({%TAG_NAME:AlarmLow}) == False))" priority="1" text="L" background="black" foreground="red1"/>
-  </animation>
- </tnode>
- <tnode id="1293" colour="GraphicForeground" layer="AdditionalValues" depth="10" xy="448,133" height="4" hjust="centre" vjust="middle" font="Verdana" ntr="true" ntm="true" tagname="23MA0003">
-  <relation type="parent" subid="3" id="1665"/>
-  <attribute name="AnimGraphic" type="null"/>
-  <animation type="text" tag="%TAG_NAME:ValveStemPosition" format="%.0f">
   </animation>
  </tnode>
  <symbol id="1294" colour="GraphicForeground" layer="Engineer" xy="680,185" name="x_isotrue" fixedlay="true" tagname="pv_23L0006" version="19-09-22 08:12:26">
@@ -2112,35 +2088,6 @@
  <cpoint id="1298" colour="GraphicForeground" xy="654,238">
   <attribute name="connection" type="text" value=""/>
   <relation type="parent" subid="3" id="1739"/>
- </cpoint>
- <symbol id="1299" colour="GraphicForeground" xy="442,126" name="x_ThirdWay_Body" angle="180" tagname="23MA0003" version="19-09-22 08:12:40">
-  <attribute name="NoStateAnim" type="null"/>
-  <attribute name="SymName" type="text" value="x_ThirdWay_Body"/>
-  <attribute name="SymPlacement" type="null"/>
-  <relation type="parent" subid="3" id="1665"/>
-  <attribute name="AnimGraphic" type="null"/>
-  <animation type="graphic" default="yellow1">
-   <state type="expression" expression="{%TAG_NAME:IsDefinedOpen} == 1" priority="0" foreground="green1"/>
-   <state type="expression" expression="{%TAG_NAME:IsDefinedClosed} == 1" priority="0"/>
-   <state type="expression" expression="(({%TAG_NAME:IsDefinedOpen}) == 1 &amp;&amp; ({%TAG_NAME:IsDefinedClosed} == 1))" priority="5" foreground="magenta1"/>
-  </animation>
- </symbol>
- <symbol id="1300" colour="GraphicForeground" xy="442,126" name="x_ThirdWay_Body" tagname="23MA0003" version="19-09-22 08:12:40">
-  <attribute name="NoStateAnim" type="null"/>
-  <attribute name="SymName" type="text" value="x_ThirdWay_Body"/>
-  <attribute name="SymPlacement" type="null"/>
-  <relation type="parent" subid="3" id="1665"/>
-  <attribute name="AnimGraphic" type="null"/>
-  <animation type="graphic" default="yellow1">
-   <state type="expression" expression="{%TAG_NAME:IsDefinedOpen} == 1" priority="0" foreground="green1"/>
-   <state type="expression" expression="{%TAG_NAME:IsDefinedClosed} == 1" priority="1"/>
-   <state type="expression" expression="(({%TAG_NAME:IsDefinedOpen}) == 1 &amp;&amp; ({%TAG_NAME:IsDefinedClosed} == 1))" priority="5" foreground="magenta1"/>
-   <state type="expression" expression="&quot;%INLETALWAYSOPEN&quot; == &quot;true&quot;" priority="9" foreground="green1"/>
-  </animation>
- </symbol>
- <cpoint id="1301" colour="GraphicForeground" xy="446,126">
-  <attribute name="snap" type="null"/>
-  <relation type="parent" subid="3" id="1665"/>
  </cpoint>
  <tnode id="1302" colour="GraphicForeground" depth="20" xy="610.25,281.5" height="3" hjust="right" font="Verdana" tagname="23PT0003">
   <relation type="parent" subid="3" id="1895"/>
@@ -3493,10 +3440,6 @@
   <relation type="parent" subid="11" id="1458"/>
   <relation type="parent" subid="12" id="1459"/>
  </netline>
- <cpoint id="1461" colour="GraphicForeground" xy="438,126">
-  <attribute name="snap" type="null"/>
-  <relation type="parent" subid="3" id="1665"/>
- </cpoint>
  <symbol id="1462" colour="GraphicForeground" xy="474.2,274.2" name="x_SquareRed" xscl="2.6" yscl="1.6" tagname="23ESV0002" version="04-01-18 19:40:08">
   <attribute name="dependentsym" type="null"/>
   <attribute name="SymName" type="text" value="x_SquareRed"/>
@@ -3538,8 +3481,8 @@
   <parameter name="COLOUR_SEPARATOR_LEVEL_LIQUID_BOOT" value="linestylecolour(*)"/>
   <parameter name="COLOUR_SEPARATOR_LEVEL_HEAVY_BOOT" value="linestylecolour(*)"/>
   <attribute name="SymName" type="text" value="Separator_Horizontal"/>
-  <attribute name="AnimGraphic" type="null"/>
   <relation type="child" subid="3" id="1727,1726,1080,1922,1154,1102,1888,1054,1311,1343,1169,1201,1249,1276,1306,1337,1192,1064,1963,1964,1965,1966,1150,1856,1167"/>
+  <attribute name="AnimGraphic" type="null"/>
   <animation type="graphic">
    <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="0" priority="0" foreground="StateInactive"/>
    <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="1" priority="0" foreground="StateRunDynamic"/>
@@ -4152,9 +4095,9 @@
   <attribute name="Inherit" type="null"/>
   <attribute name="SymPlacement" type="null"/>
   <attribute name="SymName" type="text" value="PipeFlow"/>
+  <relation type="child" subid="3" id="1933,1229,1373,1374,1379,1380,1333,1891,1359,1315,1635,1250,1831,1834,1853,1832,1833,1115"/>
   <attribute name="AnimGraphic" type="null"/>
   <relation type="mutual" subid="20" id="1049,1049"/>
-  <relation type="child" subid="3" id="1933,1229,1373,1374,1379,1380,1333,1891,1359,1315,1635,1250,1831,1834,1853,1832,1833,1115"/>
   <animation type="graphic">
    <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="0" priority="0" foreground="StateInactive"/>
    <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="1" priority="0" foreground="StateRunDynamic"/>
@@ -4569,7 +4512,6 @@
   <relation type="child" subid="3" id="1047,1050,1067,1073,1098,1099,1100,1196,1205,1224,1225,1273,1281,1284,1304,1360,1282,1283"/>
   <attribute name="SymName" type="text" value="PipeFlow"/>
   <attribute name="AnimGraphic" type="null"/>
-  <relation type="mutual" subid="20" id="1665,1665"/>
   <animation type="graphic">
    <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="0" priority="0" foreground="StateInactive"/>
    <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="1" priority="0" foreground="StateRunDynamic"/>
@@ -4955,15 +4897,6 @@
    <state type="expression" expression="{%TAG_NAME:HasBoot} == True" priority="0"/>
   </animation>
  </symbol>
- <symbol id="1663" colour="GraphicForeground" xy="442,126" name="x_Valve_Mask" fixedlay="true" tagname="23MA0003" version="19-09-22 08:12:40">
-  <attribute name="NoStateAnim" type="null"/>
-  <attribute name="SymName" type="text" value="x_Valve_Mask"/>
-  <relation type="parent" subid="3" id="1665"/>
-  <attribute name="AnimGraphic" type="null"/>
-  <animation type="graphic">
-   <state type="expression" expression="&quot;%ONLINEGRAPHIC&quot; == &quot;TRUE&quot;" priority="0" foreground="OnlineGraphicBackground"/>
-  </animation>
- </symbol>
  <symbol id="1664" colour="GraphicForeground" xy="760,268,796,268" name="PipeFlow" pitch="0" parametric="true" boundingbox="760,268,796,268" tagname="23ESV0005_pf" version="16-05-23 19:49:23">
   <parameter name="ACCEPT_AUTOCONNECT" value="*Valve;Filter;*Choke;Orifice;Venturi;FlowElement"/>
   <attribute name="SelectBox" type="real" value="0,-2,36,2"/>
@@ -4979,37 +4912,6 @@
   <attribute name="SymName" type="text" value="PipeFlow"/>
   <attribute name="AnimGraphic" type="null"/>
   <relation type="mutual" subid="20" id="1175,1175"/>
-  <animation type="graphic">
-   <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="0" priority="0" foreground="StateInactive"/>
-   <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="1" priority="0" foreground="StateRunDynamic"/>
-   <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="2" priority="0" fflash="true" foreground="StateError"/>
-   <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="3" priority="0" foreground="StateUninitialisedArrays"/>
-   <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="4" priority="0" foreground="StateLoadDefaults"/>
-   <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="5" priority="0" foreground="StateInitialise"/>
-   <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="6" priority="0" foreground="StateRunCommissioning"/>
-   <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="7" priority="0" foreground="StateCheck"/>
-  </animation>
- </symbol>
- <symbol id="1665" colour="GraphicForeground" xy="442,126" name="Manual-Valve" boundingbox="437.999,124,446.001,130" tagname="23MA0003" version="19-09-22 08:12:39">
-  <parameter name="ACCEPT_AUTOCONNECT" value="ControlValve"/>
-  <parameter name="AUTOCONNECT_PIPEFLOW" value="Output;CvAtCurrentOpening;ValveCv[*];Output;FLAtCurrentOpening;ValveFL[*];Output;XTAtCurrentOpening;ValveXT[*];Output;FdAtCurrentOpening;ValveFd[*];Output;ValveSizeInfo;ValveSize[*]"/>
-  <parameter name="AUTOCONNECT_FLOWLINE" value="Output;CvAtCurrentOpening;ValveCv[-]"/>
-  <attribute name="SelectBox" type="real" value="-4,-3,4,5"/>
-  <attribute name="Category" type="text" value="Valves"/>
-  <attribute name="transformation" type="int" value="0,2,4,7"/>
-  <attribute name="Module" type="text" value="ControlValve"/>
-  <attribute name="Itemdesc" type="text" value="Manual valve"/>
-  <attribute name="ItemType" type="text" value="ControlValve"/>
-  <attribute name="SymPlacement" type="null"/>
-  <relation type="child" subid="3" id="1461,1301,1300,1299,1865,1663,1293,1291,1290"/>
-  <parameter name="INLETALWAYSOPEN" value="false"/>
-  <parameter name="PAR_SAFEPOSITIONONTRIP" value="2"/>
-  <parameter name="PAR_INPUTSWITCH" value="2"/>
-  <parameter name="PAR_VALVEOPTION" value="1"/>
-  <parameter name="PAR_TARGETPOSITION" value="1.0"/>
-  <attribute name="SymName" type="text" value="Manual-Valve"/>
-  <attribute name="AnimGraphic" type="null"/>
-  <relation type="mutual" subid="20" id="1611,1611"/>
   <animation type="graphic">
    <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="0" priority="0" foreground="StateInactive"/>
    <state dynamic="true" type="int" tag="%TAG_NAME:@B_state" value="1" priority="0" foreground="StateRunDynamic"/>
@@ -6583,8 +6485,8 @@
  <terminal id="1856" colour="GraphicForeground" xy="328,198" flow="input" nc="1">
   <relation type="parent" subid="3" id="1464"/>
   <relation type="child" subid="12" id="1857"/>
-  <attribute name="IaElement" type="int" value="0"/>
   <attribute name="connection" type="text" value="FeedInletStream"/>
+  <attribute name="IaElement" type="int" value="0"/>
  </terminal>
  <netline id="1857" colour="LinestyleProcess" depth="-20" linestyle="Process Main" xy="288,218,328,218,328,198" output="25ESV0001_pf:OutletStream" input="23VA001:FeedInletStream[0]">
   <relation type="parent" subid="11" id="1855"/>
@@ -6631,14 +6533,6 @@
   <attribute name="connection" type="text" value=""/>
   <relation type="parent" subid="3" id="1767"/>
  </cpoint>
- <symbol id="1865" colour="GraphicForeground" xy="437,123,447,131" name="MalfunctionOutline" xscl="10" yscl="8" fitted="true" tagname="23MA0003" version="17-03-23 13:04:21">
-  <attribute name="SymName" type="text" value="MalfunctionOutline"/>
-  <relation type="parent" subid="3" id="1665"/>
-  <attribute name="AnimGraphic" type="null"/>
-  <animation type="graphic" default="invisible">
-   <state type="expression" expression="{%TAG_NAME@B_malfunction} == 1" priority="0"/>
-  </animation>
- </symbol>
  <cpoint id="1866" colour="GraphicForeground" xy="376,92">
   <attribute name="snap" type="null"/>
   <attribute name="ParaType" type="text" value="transform"/>
@@ -7495,9 +7389,9 @@
 <dataitems>
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ASC0001" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ASC0001" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ASC0001" variable="@B_no" value="53" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ASC0001" variable="@B_no" value="52" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23COLD0001" variable="@B_state" value="1" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23COLD0001" variable="@B_no" value="43" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23COLD0001" variable="@B_no" value="42" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0002" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0002" variable="InputSwitch" value="0" type="5" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0002" variable="IsDefinedClosed" value="0" type="28" />
@@ -7509,7 +7403,7 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0002" variable="TargetPosition" value="1" unitcategory="control_signal" units="fraction" type="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0002" variable="Tripped" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0002" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0002" variable="@B_no" value="30" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0002" variable="@B_no" value="29" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0002_pf" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0002_pf" variable="Check" value="0" type="5" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0002_pf" variable="CheckValveInput@V_InputType" value="0" />
@@ -7533,7 +7427,7 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0005" variable="TargetPosition" value="1" unitcategory="control_signal" units="fraction" type="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0005" variable="Tripped" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0005" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0005" variable="@B_no" value="41" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0005" variable="@B_no" value="40" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0005_pf" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0005_pf" variable="Check" value="0" type="5" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0005_pf" variable="CheckValveInput@V_InputType" value="0" />
@@ -7548,15 +7442,15 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23ESV0005_pf" variable="@B_no" value="19" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23FE0001" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23FE0001" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23FE0001" variable="@B_no" value="51" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23FE0001" variable="@B_no" value="50" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23HX0001" variable="@B_malfunction" value="0" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23HX0001" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23HX0001" variable="@B_no" value="16" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23HX0001_view" variable="@B_state" value="1" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23HX0001_view" variable="@B_no" value="40" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23HX0001_view" variable="@B_no" value="39" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23HX0001s" variable="@B_malfunction" value="0" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23HX0001s" variable="@B_state" value="1" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23HX0001s" variable="@B_no" value="45" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23HX0001s" variable="@B_no" value="44" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23KA0001" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23KA0001" variable="ActualGuideVanePosition@V_Scaled" value="0" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23KA0001" variable="InputSwitch" value="0" type="5" />
@@ -7570,17 +7464,17 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23KA0001_m" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23KA0001_m" variable="MachineONstatus" value="1" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23KA0001_m" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23KA0001_m" variable="@B_no" value="39" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23KA0001_m" variable="@B_no" value="38" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LIC0001" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LIC0001" variable="InternalSetpoint" value="500" unitcategory="level" units="mm" type="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LIC0001" variable="InternalSetpoint@V_unit" value="mm" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LIC0001" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LIC0001" variable="@B_no" value="34" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LIC0001" variable="@B_no" value="33" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LIC002" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LIC002" variable="InternalSetpoint" value="1500" unitcategory="level" units="mm" type="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LIC002" variable="InternalSetpoint@V_unit" value="mm" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LIC002" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LIC002" variable="@B_no" value="36" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LIC002" variable="@B_no" value="35" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0001" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0001" variable="AlarmHigh" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0001" variable="AlarmHighHigh" value="0" type="28" />
@@ -7592,11 +7486,11 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0001" variable="AlarmLowUsed" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0001" variable="AlarmOption" value="0" type="5" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0001" variable="DcsValue" value="0" unitcategory="level" units="mm" type="1" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0001" variable="DisplayValue" value="499.998" unitcategory="level" units="mm" type="1" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0001" variable="DisplayValue" value="499.997" unitcategory="level" units="mm" type="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0001" variable="DisplayValue@V_unit" value="mm" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0001" variable="ShowDcsValue" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0001" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0001" variable="@B_no" value="33" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0001" variable="@B_no" value="32" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0002" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0002" variable="AlarmHigh" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0002" variable="AlarmHighHigh" value="0" type="28" />
@@ -7608,11 +7502,11 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0002" variable="AlarmLowUsed" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0002" variable="AlarmOption" value="0" type="5" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0002" variable="DcsValue" value="0" unitcategory="level" units="mm" type="1" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0002" variable="DisplayValue" value="1500.02" unitcategory="level" units="mm" type="1" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0002" variable="DisplayValue" value="1499.59" unitcategory="level" units="mm" type="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0002" variable="DisplayValue@V_unit" value="mm" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0002" variable="ShowDcsValue" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0002" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0002" variable="@B_no" value="35" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LT0002" variable="@B_no" value="34" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0001" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0001" variable="InputSwitch" value="0" type="5" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0001" variable="IsDefinedClosed" value="0" type="28" />
@@ -7620,7 +7514,7 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0001" variable="LocalControlSignalIn@V_InputType" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0001" variable="RemoteControlSignalIn@V_InputType" value="0" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0001" variable="Tripped" value="0" type="28" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0001" variable="ValveStemPosition" value="0.924449" unitcategory="control_signal" units="fraction" type="1" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0001" variable="ValveStemPosition" value="0.924454" unitcategory="control_signal" units="fraction" type="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0001" variable="@B_malfunction" value="0" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0001" variable="@B_no" value="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0001_pf" variable="@B_state" value="1" />
@@ -7642,9 +7536,9 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0002" variable="LocalControlSignalIn@V_InputType" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0002" variable="RemoteControlSignalIn@V_InputType" value="0" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0002" variable="Tripped" value="0" type="28" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0002" variable="ValveStemPosition" value="0.522465" unitcategory="control_signal" units="fraction" type="1" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0002" variable="ValveStemPosition" value="0.522284" unitcategory="control_signal" units="fraction" type="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0002" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0002" variable="@B_no" value="32" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0002" variable="@B_no" value="31" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0002_pf" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0002_pf" variable="Check" value="0" type="5" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0002_pf" variable="CheckValveInput@V_InputType" value="0" />
@@ -7657,12 +7551,6 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0002_pf" variable="VenturiInput@V_InputType" value="0" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0002_pf" variable="@B_malfunction" value="0" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23LV0002_pf" variable="@B_no" value="24" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23MA0003" variable="@B_state" value="1" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23MA0003" variable="IsDefinedClosed" value="0" type="28" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23MA0003" variable="IsDefinedOpen" value="1" type="28" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23MA0003" variable="ValveStemPosition" value="1" unitcategory="control_signal" units="fraction" type="1" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23MA0003" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23MA0003" variable="@B_no" value="29" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23MA0003_pf" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23MA0003_pf" variable="Check" value="0" type="5" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23MA0003_pf" variable="CheckValveInput@V_InputType" value="0" />
@@ -7683,12 +7571,12 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PA0001_m" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PA0001_m" variable="MachineONstatus" value="1" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PA0001_m" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PA0001_m" variable="@B_no" value="31" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PA0001_m" variable="@B_no" value="30" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PIC0001" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PIC0001" variable="InternalSetpoint" value="21.0132" unitcategory="pressure" units="bara" type="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PIC0001" variable="InternalSetpoint@V_unit" value="bara" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PIC0001" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PIC0001" variable="@B_no" value="38" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PIC0001" variable="@B_no" value="37" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PSV0001" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PSV0001" variable="ValveStatus" value="0" type="5" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PSV0001" variable="ValveStemPosition@V_unscaled" value="0" />
@@ -7709,7 +7597,7 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0001" variable="DisplayValue@V_unit" value="bara" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0001" variable="ShowDcsValue" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0001" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0001" variable="@B_no" value="37" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0001" variable="@B_no" value="36" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0002" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0002" variable="AlarmHigh" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0002" variable="AlarmHighHigh" value="0" type="28" />
@@ -7725,7 +7613,7 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0002" variable="DisplayValue@V_unit" value="bara" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0002" variable="ShowDcsValue" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0002" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0002" variable="@B_no" value="50" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0002" variable="@B_no" value="49" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0003" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0003" variable="AlarmHigh" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0003" variable="AlarmHighHigh" value="0" type="28" />
@@ -7741,12 +7629,12 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0003" variable="DisplayValue@V_unit" value="bara" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0003" variable="ShowDcsValue" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0003" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0003" variable="@B_no" value="52" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23PT0003" variable="@B_no" value="51" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TIC0003" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TIC0003" variable="InternalSetpoint" value="45" unitcategory="temperature" units="degC" type="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TIC0003" variable="InternalSetpoint@V_unit" value="degC" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TIC0003" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TIC0003" variable="@B_no" value="49" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TIC0003" variable="@B_no" value="48" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TT0003" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TT0003" variable="AlarmHigh" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TT0003" variable="AlarmHighHigh" value="0" type="28" />
@@ -7758,11 +7646,11 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TT0003" variable="AlarmLowUsed" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TT0003" variable="AlarmOption" value="0" type="5" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TT0003" variable="DcsValue" value="-273.15" unitcategory="temperature" units="degC" type="1" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TT0003" variable="DisplayValue" value="44.9999" unitcategory="temperature" units="degC" type="1" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TT0003" variable="DisplayValue" value="45.0004" unitcategory="temperature" units="degC" type="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TT0003" variable="DisplayValue@V_unit" value="degC" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TT0003" variable="ShowDcsValue" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TT0003" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TT0003" variable="@B_no" value="48" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TT0003" variable="@B_no" value="47" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003" variable="InputSwitch" value="0" type="5" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003" variable="IsDefinedClosed" value="0" type="28" />
@@ -7770,9 +7658,9 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003" variable="LocalControlSignalIn@V_InputType" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003" variable="RemoteControlSignalIn@V_InputType" value="0" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003" variable="Tripped" value="0" type="28" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003" variable="ValveStemPosition" value="0.201018" unitcategory="control_signal" units="fraction" type="1" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003" variable="ValveStemPosition" value="0.201019" unitcategory="control_signal" units="fraction" type="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003" variable="@B_no" value="42" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003" variable="@B_no" value="41" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003_pf" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003_pf" variable="Check" value="0" type="5" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003_pf" variable="CheckValveInput@V_InputType" value="0" />
@@ -7784,7 +7672,7 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003_pf" variable="SourceModeEnabled" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003_pf" variable="VenturiInput@V_InputType" value="0" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003_pf" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003_pf" variable="@B_no" value="47" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23TV0003_pf" variable="@B_no" value="46" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23UV0001" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23UV0001" variable="InputSwitch" value="0" type="5" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23UV0001" variable="IsDefinedClosed" value="1" type="28" />
@@ -7794,7 +7682,7 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23UV0001" variable="Tripped" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23UV0001" variable="ValveStemPosition" value="0" unitcategory="control_signal" units="fraction" type="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23UV0001" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23UV0001" variable="@B_no" value="54" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23UV0001" variable="@B_no" value="53" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23UV0001_pf" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23UV0001_pf" variable="Check" value="0" type="5" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23UV0001_pf" variable="CheckValveInput@V_InputType" value="0" />
@@ -7812,8 +7700,8 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23VA001" variable="CalculateHoldUpOverflowSide" value="1" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23VA001" variable="HasBoot" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23VA001" variable="LevelFeedSideWeir@V_unscaled" value="1.56322" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23VA001" variable="LevelHeavyPhaseFeedSideWeir@V_unscaled" value="0.499998" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23VA001" variable="LevelOverflowLiquid@V_unscaled" value="1.50003" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23VA001" variable="LevelHeavyPhaseFeedSideWeir@V_unscaled" value="0.499997" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23VA001" variable="LevelOverflowLiquid@V_unscaled" value="1.49962" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23VA001" variable="MaxHeavyPhaseLevelBoot@V_unscaled" value="0" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23VA001" variable="MaxHeavyPhaseLevelFeedSide@V_unscaled" value="3.5" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="23VA001" variable="MaxLiquidLevelBoot@V_unscaled" value="0" />
@@ -7917,7 +7805,7 @@
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="pv_23L0006" variable="IsometricData" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="pv_23L0006" variable="SourceModeEnabled" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="pv_23L0006" variable="@B_malfunction" value="0" />
- <dataitem timeline="Tutorial" modelserver="ProcessModel" block="pv_23L0006" variable="@B_no" value="46" />
+ <dataitem timeline="Tutorial" modelserver="ProcessModel" block="pv_23L0006" variable="@B_no" value="45" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="pv_23MV0003" variable="@B_state" value="1" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="pv_23MV0003" variable="IsometricData" value="0" type="28" />
  <dataitem timeline="Tutorial" modelserver="ProcessModel" block="pv_23MV0003" variable="SourceModeEnabled" value="0" type="28" />
@@ -7962,7 +7850,6 @@
  <variable name="_TREFCOL_27" value="w8_emerald"/>
  <variable name="_TREFCOL_25" value="w8_indigo"/>
  <variable name="_TREFCOL_3" value="green"/>
- <variable name="_MAOVRENGINEERING" value="0"/>
  <variable name="_COL6PipeVolumeTAG" value="ZCoordinate@V_ref"/>
  <variable name="_DEF_FUNCTION_BLOCK_SYM" value="FunctionBlock"/>
  <variable name="_ELECTRO_ANI_HIGH_EXP" value=""/>
@@ -8007,7 +7894,6 @@
  <variable name="_USE_CONNECTION_ANI" value="True"/>
  <variable name="_OFFPAGE_DEFAULT" value="NewTab"/>
  <variable name="_STRM_ANI_RANGE_EXP" value=""/>
- <variable name="_LV_NUMSELECTED_3" value="0"/>
  <variable name="_IMAGE_SOURCE_FNAME" value="KSpiceTutorial Model"/>
  <variable name="_COL0FlashCalculatorUSED" value="TRUE"/>
  <variable name="_ACTIVE_EXERCISE_SERVER" value=""/>
@@ -8016,9 +7902,7 @@
  <variable name="_LOAD_WITH_HISTORY" value="FALSE"/>
  <variable name="_COL7PipeVolumeUSED" value="TRUE"/>
  <variable name="_THERMOFILESELECTION" value="ThermoTable"/>
- <variable name="_LV_NUMROWS" value="14"/>
  <variable name="_COL5BlockValveTAG" value="InputSwitch"/>
- <variable name="_00000004" value="0"/>
  <variable name="_XXXX_SELECT" value="Mechanical"/>
  <variable name="_COL1DrumUSED" value="FALSE"/>
  <variable name="_IMAGE_SOURCE_FNAME_MAIN" value="KSpiceTutorial Model"/>
@@ -8081,11 +7965,9 @@
  <variable name="_AMB_MATCH_ACCURACY" value="95"/>
  <variable name="_AMB_NOISE_MAXIMUM" value="15"/>
  <variable name="_AMB_SCALE_DEVIATION" value="15"/>
- <variable name="_00000003" value="??"/>
  <variable name="_COL0ControlValveTAG" value="OverallParameterStatus"/>
  <variable name="_COL0ControlValveUSED" value="TRUE"/>
  <variable name="_COL0CentrifugalPumpUSED" value="TRUE"/>
- <variable name="_00000002" value="??"/>
  <variable name="_COL0CentrifugalPumpTAG" value="OverallParameterStatus"/>
  <variable name="_COL0DrumUSED" value="FALSE"/>
  <variable name="_COL0SafetyValveUSED" value="FALSE"/>
@@ -8093,7 +7975,6 @@
  <variable name="_COL2PipeFlowTAG" value="WallToAmbientHTC[0]"/>
  <variable name="_COL3PipeFlowUSED" value="TRUE"/>
  <variable name="_COL3PipeFlowTAG" value="PipeDiameter[0]"/>
- <variable name="_CURRENT_SELECTION" value="Gas P &amp; T known"/>
  <variable name="_COMMAND_RETURN" value="0"/>
  <variable name="_ACTIVE_TIMELINE" value="/Tutorial"/>
  <variable name="_ALARM_CFG_TAB" value="Digital alarms"/>
@@ -8115,7 +7996,7 @@
  <variable name="_COL1FlashCalculatorUSED" value="TRUE"/>
  <variable name="_COL1FlashCalculatorTAG" value="@B_desc"/>
  <variable name="_COL5PipeVolumeUSED" value="TRUE"/>
- <variable name="_POSY" value="19"/>
+ <variable name="_POSY" value="120"/>
  <variable name="_COL0LedaBoundaryUSED" value="TRUE"/>
  <variable name="_COL5PipeVolumeTAG" value="MassAccumulationRateError"/>
  <variable name="_COL1PidControllerTAG" value="DcsFeedback"/>
@@ -8124,7 +8005,6 @@
  <variable name="_COL5PipeFlowTAG" value="PipeDiameter[1]"/>
  <variable name="_COL4AlarmTransmitterTAG" value="@B_desc"/>
  <variable name="_COL2FlashCalculatorUSED" value="TRUE"/>
- <variable name="_MAOVRREALTIME" value="0"/>
  <variable name="_COL2FlashCalculatorTAG" value="ThermoMethodRef"/>
  <variable name="_COL6PipeFlowUSED" value="FALSE"/>
  <variable name="_COL6PipeFlowTAG" value="SourceMode"/>
@@ -8132,7 +8012,6 @@
  <variable name="_COL7PipeFlowTAG" value="SegmentLength[0]"/>
  <variable name="_COL0StreamBoundaryTAG" value="ThermoMethodRef"/>
  <variable name="_COL0StreamBoundaryUSED" value="TRUE"/>
- <variable name="_00000000" value="0"/>
  <variable name="_COL0LedaBoundaryTAG" value="ThermoMethodRef"/>
  <variable name="_COL2DrumUSED" value="FALSE"/>
  <variable name="_COL1SafetyValveTAG" value="SafetyValveType"/>
@@ -8149,7 +8028,7 @@
  <variable name="_COL6PipeVolumeUSED" value="FALSE"/>
  <variable name="_COL2BlockValveUSED" value="FALSE"/>
  <variable name="_COL3ControlValveUSED" value="TRUE"/>
- <variable name="_POSX" value="2614"/>
+ <variable name="_POSX" value="2649"/>
  <variable name="_COL3ControlValveTAG" value="CvFullyOpen@V_ref"/>
  <variable name="_COL4ControlValveUSED" value="TRUE"/>
  <variable name="_COL5ControlValveUSED" value="TRUE"/>
@@ -8175,24 +8054,7 @@
  <variable name="_IMAGE_SOURCE" value="C:\K-Spice-Projects\DemoProject\Timelines/Tutorial\ExplorerFiles\ProcessModel\KSpiceTutorial Model\KSpiceTutorial Model.xdr"/>
  <variable name="_NAMECHECKVERSION" value="K-Spice SimExplorer Version 25.1.1.6"/>
  <variable name="_IMAGE_LIST" value=""/>
- <variable name="_MENU_DOUBLE_CLICK" value="FALSE"/>
- <variable name="_IMAGEAREA_MENU" value=""/>
- <variable name="_00000001" value="0"/>
- <variable name="_00000005" value="??"/>
- <variable name="_MAMODE" value="-1"/>
- <variable name="_MATMODE" value="0"/>
- <variable name="_MAOVRLOOKAHEAD" value="0"/>
- <variable name="_MAOVRPLANNING" value="0"/>
- <variable name="_LV_NUMSELECTED" value="0"/>
- <variable name="_LV_NUMSELECTED_2" value="0"/>
- <variable name="_LV_NUMSELECTED_4" value="0"/>
- <variable name="_LV_NUMSELECTED_6" value="0"/>
- <variable name="_SELECTION_61" value="Gas P &amp; T known"/>
- <variable name="_CURRENT_FLASH_NUMBER" value=""/>
- <variable name="_CURRENT_FLASH_TAB" value=""/>
- <variable name="_MW_LIST" value=""/>
- <variable name="_LINESTYLE" value="Gas"/>
- <variable name="_INITIALISE_STATE" value="FINISHED"/>
+ <variable name="_LINESTYLE" value="Mechanical"/>
  <variable name="_PROGRESS_MONITOR_OPEN" value="True"/>
  <variable name="ONLINEGRAPHIC" value="FALSE"/>
  <variable name="COLOUR_SEPARATOR_LEVEL_HEAVY_BOOT" value="linestylecolour(*)"/>
@@ -8201,8 +8063,8 @@
  <variable name="PAR_TARGETPOSITION" value="1.0"/>
  <variable name="SYM_ANG" value="0"/>
  <variable name="SYM_XSCL" value="1"/>
- <variable name="SELECTBOX_3" value="20"/>
- <variable name="TAG_INDEX" value="1322"/>
+ <variable name="SELECTBOX_3" value="6"/>
+ <variable name="TAG_INDEX" value="1906"/>
  <variable name="DIRDEPENDENT" value=""/>
  <variable name="AUTOCONNECT_LATCHEDSYNCHRONOUSMACHINE" value="Output;ControllerOutput;LocalControlSignalIn;Input;OutputSwitch;InputSwitch;Input;TargetSignal;DcsFeedback"/>
  <variable name="SYM_ANGR" value="0"/>
@@ -8211,7 +8073,7 @@
  <variable name="PAR_@B_DIMS[EXTERNALSTREAMS]" value="[i]1"/>
  <variable name="INHERIT" value=""/>
  <variable name="AUTOALIGN" value=""/>
- <variable name="SYM_X" value="480"/>
+ <variable name="SYM_X" value="512"/>
  <variable name="INTERNAL" value=""/>
  <variable name="COLOUR_SEPARATOR_LEVEL_LIQUID_WEIR" value="linestylecolour(*)"/>
  <variable name="GRAPHIC" value="KSpiceTutorial Model"/>
@@ -8219,31 +8081,31 @@
  <variable name="ANIMGRAPHIC" value="TRUE"/>
  <variable name="LOADHOMEGRAPHIC" value="0"/>
  <variable name="ENVIRONMENT" value="Engineer"/>
- <variable name="ITEMNAME" value="25HV0001"/>
+ <variable name="ITEMNAME" value="23LV0002"/>
  <variable name="MID" value="/Tutorial"/>
  <variable name="AUTOCONNECT_GROUPED" value="TRUE"/>
  <variable name="CUR_GRAPHIC" value="KSpiceTutorial Model"/>
- <variable name="TAG_NAME_OUT" value="23PT0001:MeasuredValue"/>
+ <variable name="TAG_NAME_OUT" value="23LT0002:MeasuredValue"/>
  <variable name="PARATYPE" value="Normal"/>
  <variable name="LINESTYLE" value="Instrument"/>
  <variable name="BUNDLE" value=""/>
- <variable name="MODULE" value="Separator"/>
+ <variable name="MODULE" value="PidController"/>
  <variable name="TAG_MID" value="/Tutorial/ProcessModel"/>
  <variable name="SYM_NAME" value="PidController"/>
- <variable name="SYMNAME" value="Separator_Horizontal"/>
+ <variable name="SYMNAME" value="PidController"/>
  <variable name="TAG_NAME" value=""/>
- <variable name="SYM_Y" value="220"/>
+ <variable name="SYM_Y" value="178"/>
  <variable name="SYM_YSCL" value="1"/>
  <variable name="TAG_TYPE" value=""/>
  <variable name="TAG_DESC" value="PIDController"/>
- <variable name="SELECTBOX_0" value="-54"/>
- <variable name="SELECTBOX_1" value="-20"/>
- <variable name="SELECTBOX_2" value="54"/>
- <variable name="NETCONNECT" value="TRUE"/>
- <variable name="SINGLECONNECT" value="TRUE"/>
- <variable name="CATEGORY" value="Basic Process"/>
- <variable name="ITEMDESC" value="Horizontal separator"/>
- <variable name="ITEMTYPE" value="Separator"/>
+ <variable name="SELECTBOX_0" value="-6"/>
+ <variable name="SELECTBOX_1" value="-6"/>
+ <variable name="SELECTBOX_2" value="6"/>
+ <variable name="NETCONNECT" value=""/>
+ <variable name="SINGLECONNECT" value=""/>
+ <variable name="CATEGORY" value="Control"/>
+ <variable name="ITEMDESC" value="PIDController"/>
+ <variable name="ITEMTYPE" value="PIDController"/>
  <variable name="SYMPLACEMENT" value="TRUE"/>
  <variable name="LAYERLOCKED" value=""/>
  <variable name="TRANSFORMATION_0" value="0"/>
@@ -8252,7 +8114,7 @@
  <variable name="TRANSFORMATION_2" value="4"/>
  <variable name="TRANSFORMATION_3" value="7"/>
  <variable name="AUTOPOSITION" value=""/>
- <variable name="ACCEPT_AUTOCONNECT" value="HeatExchangerStream*"/>
+ <variable name="ACCEPT_AUTOCONNECT" value="ControlValve;DcsTorqueConverter;LatchedAsynchronousMachine;LatchedSynchronousMachine;PulsedAsynchronousMachine;PulsedSynchronousMachine;ControlledAsynchronousMachine;ControlledSynchronousMachine"/>
  <variable name="AUTOCONNECT_PIPEFLOW" value="Output;CvAtCurrentOpening;ValveCv[*];Output;FLAtCurrentOpening;ValveFL[*];Output;XTAtCurrentOpening;ValveXT[*];Output;FdAtCurrentOpening;ValveFd[*];Output;ValveSizeInfo;ValveSize[*]"/>
  <variable name="AUTOCONNECT_GENERATOR" value="Input;OutputCoupling[*];ElectroCoupling;"/>
  <variable name="INLETALWAYSOPEN" value="false"/>
@@ -8266,8 +8128,8 @@
  <variable name="CONNECTION" value=""/>
  <variable name="FORCEUPDATE" value="TRUE"/>
  <variable name="RESIZEABLE" value="xy"/>
- <variable name="AUTOCONNECT_HEATEXCHANGERSTREAM" value="Input;WallTemperatureProfile;CoilWallTemperature[*];Output;CoilFluidTemperature[*];AmbientTemperatureProfile;Output;HeatConductanceProfileCoil[*];HeatConductanceProfileAmbient;Output;CoilIntegrationFactor[*];AmbientTemperatureIntegrationFactor;Input;GridProfile;CoilGrid[*]"/>
- <variable name="AUTOCONNECT_HEATEXCHANGERSTREAMNET" value="Input;WallTemperatureProfile;CoilWallTemperature[*];Output;CoilFluidTemperature[*];AmbientTemperatureProfile;Output;HeatConductanceProfileCoil[*];HeatConductanceProfileAmbient;Output;CoilIntegrationFactor[*];AmbientTemperatureIntegrationFactor;Input;GridProfile;CoilGrid[*]"/>
+ <variable name="AUTOCONNECT_HEATEXCHANGERSTREAM" value="Output;WallTemperatureProfile;TemperatureProfileExternal[*];Input;FluidTemperatureProfile;AmbientTemperatureProfile;Input;HeatConductanceProfileExternal[*];HeatConductanceProfileAmbient;Input;TemperatureIntegrationFactor;AmbientTemperatureIntegrationFactor;Input;GridProfile;GridInputProfile"/>
+ <variable name="AUTOCONNECT_HEATEXCHANGERSTREAMNET" value="Output;WallTemperatureProfile;TemperatureProfileExternal[*];Input;FluidTemperatureProfile;AmbientTemperatureProfile;Input;HeatConductanceProfileExternal[*];HeatConductanceProfileAmbient;Input;TemperatureIntegrationFactor;AmbientTemperatureIntegrationFactor;Input;GridProfile;GridInputProfile"/>
  <variable name="COLOUR_SEPARATOR_LEVEL_HEAVY_WEIR" value="linestylecolour(*)"/>
  <variable name="COLOUR_SEPARATOR_LEVEL_LIQUID_BOOT" value="linestylecolour(*)"/>
  <variable name="DEPENDENTSYM" value=""/>
@@ -8281,7 +8143,7 @@
  <variable name="AUTOCONNECT_PULSEDASYNCHRONOUSMACHINE" value="Output;ControllerOutput;LocalControlSignalIn;Input;OutputSwitch;InputSwitch;Input;TargetSignal;DcsFeedback"/>
  <variable name="AUTOCONNECT_PULSEDSYNCHRONOUSMACHINE" value="Output;ControllerOutput;LocalControlSignalIn;Input;OutputSwitch;InputSwitch;Input;TargetSignal;DcsFeedback"/>
  <variable name="STATIC" value="TRUE"/>
- <variable name="SUBITEMNAME" value="PIC"/>
+ <variable name="SUBITEMNAME" value="LIC"/>
  <variable name="DEPRECATED" value=""/>
  <variable name="AUTOCONNECT_PIDCONTROLLER" value="Input;ControllerOutput;LocalControlSignalIn;Output;OutputSwitch;InputSwitch;Output;TargetSignal;DcsFeedback"/>
  <variable name="AUTOCONNECT_AIMPIDCON" value="Input;ConOut;LocalControlSignalIn;Output;OutputSwitch;TrackSel;Output;TargetSignal;TrackVal"/>
@@ -8296,7 +8158,7 @@
  <variable name="AUTOCONNECT_BUS" value="Input;OutputCoupling[*];ElectroCoupling;"/>
  <variable name="AUTOCONNECT_MOTORBUS" value="Input;OutputCoupling[*];ElectroCoupling;"/>
  <variable name="AUTOCONNECT_WINDTURBINE" value="Input;Torque;Torque[*];Output;Speed[*];Speed"/>
- <variable name="ASSEMBLYCOMP" value=""/>
+ <variable name="ASSEMBLYCOMP" value="TRUE"/>
  <variable name="TRANSFORMATION_6" value="6"/>
  <variable name="AUTOCONNECT_DRUM" value="Output;WallTemperatureProfile;CoilWallTemperature[*];Input;CoilFluidTemperature[*];AmbientTemperatureProfile;Input;HeatConductanceProfileCoil[*];HeatConductanceProfileAmbient;Input;CoilIntegrationFactor[*];AmbientTemperatureIntegrationFactor;Output;GridProfile;CoilGrid[*]"/>
  <variable name="AUTOCONNECT_SEPARATOR" value="Output;WallTemperatureProfile;CoilWallTemperature[*];Input;CoilFluidTemperature[*];AmbientTemperatureProfile;Input;HeatConductanceProfileCoil[*];HeatConductanceProfileAmbient;Input;CoilIntegrationFactor[*];AmbientTemperatureIntegrationFactor;Output;GridProfile;CoilGrid[*]"/>
@@ -8318,6 +8180,6 @@
  <variable name="MODEL_LOAD_TIMELINE" value="/Tutorial"/>
  <variable name="ENGG_ENVMNT" value="Engineer"/>
  <variable name="TIMELINE" value="/Tutorial"/>
- <variable name="IMAGEAREA_PARENT" value="TRUE"/>
+ <variable name="IMAGEAREA_PARENT" value="FALSE"/>
 </variables>
 </xdr>
