@@ -4,7 +4,7 @@
     <Description></Description>
     <Comment></Comment>
     <ModelTime></ModelTime>
-    <SaveTime>2025-05-28T12:21:09.962Z</SaveTime>
+    <SaveTime>2025-06-03T11:46:05.193Z</SaveTime>
     <ModelFile></ModelFile>
     <ParameterFile></ParameterFile>
     <ValueFile></ValueFile>
@@ -468,32 +468,12 @@
     <Sizes keyword="InletStreamComponents" >14</Sizes>
     <Sizes keyword="OutletStreamComponents" >14</Sizes>
     <Sizes keyword="PipeSegments" >1</Sizes>
-    <Sizes keyword="Valves" >1</Sizes>
+    <Sizes keyword="Valves" >0</Sizes>
     <Sizes keyword="Absorbates" >0</Sizes>
     <Inputs>
       <Input>
         <Destination>InletStream</Destination>
         <Source>23VA001:OverflowOutletStream[0]</Source>
-      </Input>
-      <Input>
-        <Destination>ValveCv[0]</Destination>
-        <Source>23MA0003:CvAtCurrentOpening</Source>
-      </Input>
-      <Input>
-        <Destination>ValveFL[0]</Destination>
-        <Source>23MA0003:FLAtCurrentOpening</Source>
-      </Input>
-      <Input>
-        <Destination>ValveFd[0]</Destination>
-        <Source>23MA0003:FdAtCurrentOpening</Source>
-      </Input>
-      <Input>
-        <Destination>ValveSize[0]</Destination>
-        <Source>23MA0003:ValveSizeInfo</Source>
-      </Input>
-      <Input>
-        <Destination>ValveXT[0]</Destination>
-        <Source>23MA0003:xTAtCurrentOpening</Source>
       </Input>
     </Inputs>
     <DataItems>
@@ -671,20 +651,6 @@
     <DataItems>
       <DataItem Name="ValveOption" >
         <Value>0</Value>
-      </DataItem>
-    </DataItems>
-  </Block>
-  <Block Name="23MA0003" Type="ControlValve" Description="Manual valve" State="g" StepBase="1" >
-    <Drawing>KSpiceTutorial Model</Drawing>
-    <Sizes keyword="PointsInCharacteristicCurve" >0</Sizes>
-    <Sizes keyword="PointsInDisplayCurve" >10</Sizes>
-    <Sizes keyword="TuningCurve" >2</Sizes>
-    <Sizes keyword="TuningFactors" >0</Sizes>
-    <Inputs>
-    </Inputs>
-    <DataItems>
-      <DataItem Name="ValveOption" >
-        <Value>1</Value>
       </DataItem>
     </DataItems>
   </Block>
