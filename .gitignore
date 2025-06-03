@@ -3,8 +3,10 @@
 ## Include all directories and Explicitly include relevant file-types
 !**/
 !.gitignore
+!.gitattributes
 ## Project Root CommonData / Resources /
-!*.tab
+!*.ttb
+!*.mcl
 !*.sym
 !*.kspice
 !*.db
